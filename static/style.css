@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom CSS */
+body {
+    background-color: #c2afaf;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007BFF;
+    height: 80px;
+    box-shadow: 0px 0px 10px #007BFF;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.navbar .navbar-nav {
+    float: right;
+    position: relative;
+    top: 15px;
+    right: 20px;
+}
+
+.navbar .navbar-nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar .navbar-nav li a {
+    text-decoration: none;
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 0px 4px 6px 4px;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+/* Hero Section Styles */
+#hero-container {
+    background: url('bg\ 2.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-wrapper {
+    width: 80%;
+    max-width: 600px;
+    color: #bea5a5;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-wrapper h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-wrapper p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-wrapper a:hover {
+    background-color: #0056b3;
+}
+
+/* About Section Styles */
+.about-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#about {
+    position: relative;
+}
+
+.about-content {
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.about-heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 30%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.about-content .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+#portfolio h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-item:nth-child(3) {
+    margin-top: 20px;
+}
+
+.portfolio-item:nth-child(4) {
+    margin-top: 20px;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #007BFF;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007BFF;
+    box-shadow: 0px 0px 10px #007BFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container-footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-footer img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.container-footer p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Flex System */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}

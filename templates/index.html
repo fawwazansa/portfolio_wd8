@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="Welcome to my Portfolio" />
+    <meta property="og:image" content="{{ url_for('static', filename='ogimage.png') }}" />
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero background & content on top of hero background -->
+<div id="hero-container" class="bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>MOH. AYYUHAN FAWWAZANSA</h1>
+                <p>A Student and Junior Web Developer</p>
+
+                <div class="btn-wrapper">
+                    <a href="#contact" class="btn btn-light">Let's connect</a>
+                    <a href="#portfolio" class="btn btn-light">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="bg-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="foto saya.jpg" alt="Your Image" class="img-fluid profile-img rounded-circle">
+            </div>
+            <div class="col-md-6">
+                <h2 class="about-heading">About Me</h2>
+                <p class="about-text">As an undergraduate student majoring in informatics at the East Java Veteran
+                    National Development University, I am very excited to develop my interests and talents in the IT
+                    field and want to learn various things in that field. I hope to pass this program and want to
+                    develop my skills and knowledge in IT.</p>
+                <a href="your-cv.pdf" class="btn btn-primary">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<div id="portfolio" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Portfolio/Pengalaman</h2>
+        <div class="row">
+            <div class="col-md-4 mb 5">
+                <div class="portfolio-item">
+                    <h3>Head of the Media and Information Department, IKAMALA UPN Veterans East Java (2023-2024)
+                    </h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb 5">
+                <div class="portfolio-item">
+                    <h3>Coordinator of the Event Division, Campus Expo National Forum of Lamongan Students
+                        (FORNASMALA) 2023</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb 5">
+                <div class="portfolio-item">
+                    <h3>Member of UPN Veteran East Java Futsal UKM</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Enter Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Write Something</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <div class="contact-social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>
+        Created by
+        <a class="text-black fw-bold">Moh. Ayyuhan Fawwazansa</a>
+    </p>
+</footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Jnujsl5sF5Cp+BMYvJi2lnA8TC2ElEgdtB8jxeX5vmf2UtG" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
